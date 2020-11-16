@@ -6,7 +6,7 @@ const Lotto = require('../models/Lotto');
 
 
 async function updateDB () {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({executablePath: '/usr/bin/chromium-browser'});
     const page = await browser.newPage();
 
     const archive = 'https://www.pais.co.il/lotto/showMoreResults.aspx?fromIndex=1&amount=99';

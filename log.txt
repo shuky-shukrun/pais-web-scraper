@@ -1,0 +1,16 @@
+
+> scraping@1.0.0 start /home/pi/Documents/GitHub/pais-web-scraper
+> node ./scrapers/lottoScraper.js
+
+last lottery in website: 3287
+connected to db!
+Last existing item in DB: 3287
+Database is up to date
+
+> scraping@1.0.0 start /home/pi/Documents/GitHub/pais-web-scraper
+> node ./scrapers/lottoScraper.js
+
+last lottery in website: 3287
+connected to db!
+Last existing item in DB: 3287
+Database is up to date

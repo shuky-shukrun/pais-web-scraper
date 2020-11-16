@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "mongoose": "^5.10.3",
-    "puppeteer": "^5.2.1"
+    "mongoose": "^5.10.11",
+    "puppeteer": "^5.4.1"
   }
 }
