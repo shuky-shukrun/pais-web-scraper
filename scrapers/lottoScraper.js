@@ -50,11 +50,12 @@ async function updateDB () {
         }
         log += newScraped.length + "Lotteries added to database\n";
         console.log(newScraped.length + " Lotteries added to database");
+        sendEmail(log);
+        
     } else {
         log += "Database is up to date\n";
         console.log("Database is up to date");
     }
-    sendEmail(log);
     mongoose.connection.close();
     await browser.close();
 }
