@@ -4,6 +4,9 @@
 name: Node.js Lotteries Updater
 
 on:
+  schedule:
+      # * is a special character in YAML so you have to quote this string
+      - cron:  '15,30,45 23 * * 2,6'
   push:
     branches: [ master ]
   pull_request:
