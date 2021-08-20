@@ -25,6 +25,11 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
+      env: # Or as an environment variable
+        DB_CONNECTION: ${{ secrets.DB_CONNECTION }}
+        EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        
         cache: 'npm'
     - run: npm install
     - run: npm start
